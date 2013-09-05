@@ -74,6 +74,7 @@ default['nginx']['gzip_types']        = [
   "text/mathml"
 ]
 
+default['nginx']['port'] = "80"
 default['nginx']['keepalive']          = "on"
 default['nginx']['keepalive_timeout']  = 65
 default['nginx']['worker_processes']   = node['cpu'] && node['cpu']['total'] ? node['cpu']['total'] : 1
